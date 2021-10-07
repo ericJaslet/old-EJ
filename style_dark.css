@@ -1,0 +1,716 @@
+/*
+	date:10/02/2019;
+	by: Eric Jaslet;
+	for: ericjaslet.fr;
+*/
+/*-----------------------------------
+=====================================
+			références
+=====================================
+-----------------------------------*/
+/* 	choux fleur : #fdf4da 
+	carotte : #f4661b 
+	aubergine : #370028
+	bleu : #83e4e2
+
+	|| < 414px 	(< 750px)		=> xsm extra small
+	> 414px 	|| 	< 750px 	=> à ajouter pour mobile
+	> 750px 	|| 	< 992px 	=> sm small
+	> 992px		|| 	< 1200px 	=> md medium
+	> 1200px 	||	< 1600px 	=> lg large 
+	> 1600px 	||				=> xl extra large
+	Attention + 18/20px pour la scroll-bar
+*/
+/*-----------------------------------------------------------------------------------------------------
+=======================================================================================================
+			
+												structure
+
+=======================================================================================================
+-----------------------------------------------------------------------------------------------------*/
+/* extra small */
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:24.99%;}
+.col-4{width:33.32%;}
+.col-5{width:41.65%;}
+.col-6{width:49.98%;}
+.col-7{width:58.31%;}
+.col-8{width:66.64%;}
+.col-9{width:74.97%;}
+.col-10{width:83.3%;}
+.col-11{width:91.63%;}
+.col-12{width:100%;}
+
+.container{width:100%; margin:0 auto;}
+.d-none{display:none;}
+.d-block{display:block;}
+/* small */
+@media screen and (min-width:768px){
+	.col-sm-1{width:8.33%;}
+	.col-sm-2{width:16.66%;}
+	.col-sm-3{width:24.99%;}
+	.col-sm-4{width:33.32%;}
+	.col-sm-5{width:41.65%;}
+	.col-sm-6{width:49.98%;}
+	.col-sm-7{width:58.31%;}
+	.col-sm-8{width:66.64%;}
+	.col-sm-9{width:74.97%;}
+	.col-sm-10{width:83.3%;}
+	.col-sm-11{width:91.63%;}
+	.col-sm-12{width:100%;}
+
+	.container{width:100%;}
+	.d-sm-block{display:block;}
+	.d-sm-none{display:none;}
+}
+/* medium */
+@media screen and (min-width:1000px){
+	.col-md-1{width:8.33%;}
+	.col-md-2{width:16.66%;}
+	.col-md-3{width:24.99%;}
+	.col-md-4{width:33.32%;}
+	.col-md-5{width:41.65%;}
+	.col-md-6{width:49.98%;}
+	.col-md-7{width:58.31%;}
+	.col-md-8{width:66.64%;}
+	.col-md-9{width:74.97%;}
+	.col-md-10{width:83.3%;}
+	.col-md-11{width:91.63%;}
+	.col-md-12{width:100%;}
+
+	.container{width:990px;}
+	.d-md-block{display:block;}
+	.d-md-none{display:none;}
+}
+/* large */
+@media screen and (min-width:1220px){
+	.col-lg-1{width:8.33%;}
+	.col-lg-2{width:16.66%;}
+	.col-lg-3{width:24.99%;}
+	.col-lg-4{width:33.32%;}
+	.col-lg-5{width:41.65%;}
+	.col-lg-6{width:49.98%;}
+	.col-lg-7{width:58.31%;}
+	.col-lg-8{width:66.64%;}
+	.col-lg-9{width:74.97%;}
+	.col-lg-10{width:83.3%;}
+	.col-lg-11{width:91.63%;}
+	.col-lg-12{width:100%;}
+
+	.container{width:1200px;}
+	.d-lg-block{display:block;}
+	.d-lg-none{display:none;}
+}
+/* extra large by: Eric Jaslet;*/
+@media screen and (min-width:1620px){
+	.col-xl-1{width:8.33%;}
+	.col-xl-2{width:16.66%;}
+	.col-xl-3{width:24.99%;}
+	.col-xl-4{width:33.32%;}
+	.col-xl-5{width:41.65%;}
+	.col-xl-6{width:49.98%;}
+	.col-xl-7{width:58.31%;}
+	.col-xl-8{width:66.64%;}
+	.col-xl-9{width:74.97%;}
+	.col-xl-10{width:83.3%;}
+	.col-xl-11{width:91.63%;}
+	.col-xl-12{width:100%;}
+
+	.container{width:1200px;}
+	.d-xl-block{display:block;}
+	.d-xl-none{display:none;}
+}
+.row{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.img-fluid{width:100%;}
+/*-----------------------------------
+=====================================
+			de base
+=====================================
+-----------------------------------*/
+*, body{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	color:white;/*#370028*/
+	font-family: 'Roboto', sans-serif;
+	box-sizing:border-box;
+}
+body{
+	background-color:#38383D;
+}
+
+h1, h2, h3, h4, h5, h6, li, a, span, em, strong{letter-spacing:1px;}
+h1, h2, h3, h4, h5, h6, li{color:#fdf4da; font-weight:bold; font-family: 'Roboto', sans-serif;}
+h1{/*font-size:3em;*/ text-transform:uppercase;}
+h2{font-size:2.5em; text-transform:uppercase;}
+h3 {font-size:1.5em;}
+h4, h5, h6{font-size:2em;}
+p{line-height:24px;}
+strong{font-weight:normal;}
+em{font-style:normal;}
+
+
+a{text-decoration:none; color:#f4661b;}
+a:hover{color:#fdf4da;}
+
+.clear{clear:both;}
+
+iframe{border:none;}
+ul li{list-style:none;}
+/*-----------------------------------
+=====================================
+		classe suplémentaire
+=====================================
+-----------------------------------*/
+/*-----------------------------------
+=====================================
+			Couleur
+=====================================
+-----------------------------------*/
+.c-aubergine{color:#370028;}
+.c-choux-fleur{color:#fdf4da;}
+.c-carrotte{color:#f4661b;}
+/*-----------------------------------
+=====================================
+		Ajout
+=====================================
+-----------------------------------*/
+.h-20{height:20px;}
+.h-25{height:25px;}
+.h-25{height:25px;}
+.h-40{height:40px;}
+.h-100{height:100px;}
+.h-150{height:150px;}
+.h-200{height:200px;}
+
+.m-10{margin:10px;}
+.m-20{margin:20px;}
+.mt-10{margin-top:10px;}
+.mt-15{margin-top:15px;}
+.mt-20{margin-top:20px;}
+.mt-40{margin-top:40px;}
+.mt-70{margin-top:70px;}
+.ml-10{margin-left:10px;}
+.ml-20{margin-left:20px;}
+.mr-10{margin-right:10px;}
+.mr-20{margin-right:20px;}
+.mb-20{margin-bottom:20px;}
+.mb-40{margin-bottom:40px;}
+.mb-10{margin-bottom:10px;}
+.my-20{margin-top:20px; margin-bottom:20px;}
+
+.mx-auto{display:block; margin-left:auto; margin-right:auto;}
+
+.pdd-10{padding:10px;}
+.px-5{padding-left:5px;padding-right:5px;}
+.pddl-10{padding-left:10px;}
+.pddl-20{padding-left:20px;}
+.pddr-10{padding-right:10px;}
+.pddr-20{padding-right:20px;}
+
+.img-center{
+	display:block;
+	margin:0 auto;
+}
+.img-max90-r{
+	max-height:90px;
+	max-width:90px;
+	border-radius:50%;
+}
+.img-sz-100{width:100%; max-width:100px;}
+
+.no-list-style{list-style:none;}
+
+.pointer {cursor:pointer;}
+
+.fl-right{float:right;}
+.fl-left{float:left;}
+
+.h1-center{font-size:3em; text-align:center;}
+.txt-sz-2em{font-size:2em;}
+.txt-italic{font-style:italic;}
+.txt-center{text-align:center;}
+.txt-right{text-align:right;}
+.txt-sz-1-3{font-size:1.3em;}
+.txt-sz-1-5{font-size:1.5em;}
+.v-align-m{vertical-align:center;}
+
+.min-title{
+	font-weight: bold;
+	color:#fdf4da;
+}
+
+.border{border:1px solid #370028;}
+/*----------------------------------------------------------------------------------------------------------------------------
+==============================================================================================================================
+							Start
+==============================================================================================================================
+----------------------------------------------------------------------------------------------------------------------------*/
+.ancres{
+	display:block;
+	visibility:hidden;
+}
+.ancre_header{
+	display:block;
+	visibility:hidden;
+}
+/*--------------------------------------------------------------------
+======================================================================
+							NAV
+======================================================================
+--------------------------------------------------------------------*/
+.top-page{
+	display:block;
+	max-width: 450px;
+	margin:20px auto 30px auto;
+}
+.top-titre{
+	display:none;
+	font-size:2.5em;
+	font-weight: 900;
+}
+.h1-border{
+	display:block;
+	width:100%;
+	height:2px;
+	background-color:#370028;
+	margin:10px 0;
+}
+.top-sous-titre{
+	font-size: 1.5em;
+	font-style:italic;
+}
+nav{
+	position:-webkit-sticky;/*Safari*/
+	position:sticky;
+	top:0px;
+	min-height:35px;
+	margin:0 auto;
+	width:100%;
+	background-color:#38383D;
+	z-index:1000;
+	box-shadow: 0 1px 15px #f4661b;
+}
+.arrow-top{
+	width:50px;
+	height:50px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	border-radius:50%;
+	z-index:1000;
+	opacity:0.6;
+}
+.icone-menu-burger{
+	display:inline-block;
+	margin:5px 0 0 10px;
+	cursor:pointer;
+}
+.bar1, .bar2, .bar3{
+	width:35px;
+	height:5px;
+	background-color:#f4661b;
+	margin:5px 0;
+	transition:.4s;
+}
+.change1{
+	transform:rotate(-45deg) translate(-7px, 7px);
+}
+.change2{
+	opacity:0;
+}
+.change3{
+	transform:rotate(45deg) translate(-7px, -7px);
+}
+h2.navBarTitle{
+	display:block;
+	float:right;
+	font-size:1.5em;
+	margin-right:10px;
+	line-height: 43px;
+}
+.menu-responsive{
+	display:none;
+}
+
+.menu-responsive{
+	width:100%;
+	display:none;
+	position:absolute;
+	background-color:rgba(244, 102, 27, .95);/*#f4661b;*/
+	z-index:500;
+}
+.burger-links li{
+	width:100%;	
+	padding-left:10px;
+}
+.burger-links li a{
+	display:inline-block;
+	text-align: center;
+	width:100%;
+	font-size:16px;
+	line-height:60px;
+	color:#fdf4da;
+}
+.burger-links li:hover{
+	background-color:rgba(255, 255, 255, 0.2);
+}
+.nav1{
+	display: none;
+}
+.menu-niv-1{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+}
+nav .menu-niv-1 li{
+	display:block;
+	width:16.666%;
+	list-style:none;
+	float:left;
+	text-align: center;
+}
+nav .menu-niv-1 li > a{
+	width:100%;
+	display:inline-block;
+	text-decoration:none;
+	padding:20px 0;
+	/* color:#fdf4da; */
+}
+.menu-niv-1 > li:hover{
+	border-top:5px solid #f4661b;
+	background-color: #4b4b50;
+}
+.menu-niv-1 > li:hover > a{
+	padding-top:15px; /*pour compenser la bordure*/
+}
+/*--------------------------------------------------------------------
+======================================================================
+							MAIN
+======================================================================
+--------------------------------------------------------------------*/
+/*-----------------------------------
+=====================================
+			Horizon
+=====================================
+-----------------------------------*/
+
+.horizon img{
+	margin-top:35px;
+}
+
+/*-----------------------------------
+=====================================
+			Présentation
+=====================================
+-----------------------------------*/
+.presentation{
+	padding:75px 5px 75px;
+}
+.presentation .container-img{
+	display: flex;
+	justify-content: flex-end;
+}
+.presentation .container-img img{
+	max-height:250px;
+	width:auto;
+	max-width: 100%;
+}
+.presentation h2{
+	font-size: 1.8em;
+	margin-bottom:20px;
+}
+.presentation div:nth-child(2){
+	padding-left:5px;
+}
+.presentation div:nth-child(2) p{
+	line-height: 2em;
+}
+.presentation li{
+	margin-left:1em;
+	line-height:2em;
+}
+/*-----------------------------------
+=====================================
+			compétences
+=====================================
+-----------------------------------*/
+.skills {
+	padding:75px 5px 75px;
+}
+.skills h2, .skills h3{
+	margin-bottom:40px;
+}
+.skills h3{
+	margin-top:20px;
+}
+.div-bar{
+	padding-left:1em;
+}
+
+/*------------- progress bar ---------------*/
+.bar-background{
+	background-color:#fdf4da;
+	border-radius:5px;
+}
+.progress-bar{
+	line-height:15px;
+	margin-bottom:40px;
+}
+.my-progress{
+	width:0%;
+	height:15px;
+
+	border-radius:5px;
+}
+.color-1{
+	background-color:#a2ed56;
+}
+.color-2{
+	background-color:#83e4e2;
+}
+
+
+/*------------- cercle ---------------*/
+/*** Progression du skill ***/
+/* Circonférence = 2πr */
+/* π = 3.1415926535898 */
+/* r = 35 */
+
+svg.radial-progress {
+  height: auto;
+  max-width: 100%;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke-dashoffset: 219.91148575129; /* circonférence */
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete {opacity: 0.25; }
+
+svg.radial-progress circle.complete {stroke-dasharray: 219.91148575129;/* circonférence */}
+
+svg.radial-progress text {text-anchor: middle;}
+
+/*** COLORS ***/
+.color-white{stroke:black}
+/* Primary */
+svg.color1 circle {stroke: #a2ed56; }
+
+/* Secondary */
+svg.color2 circle {stroke: #83e4e2; }
+/*-----------------------------------
+=====================================
+			Parcours
+=====================================
+-----------------------------------*/
+.path{
+	margin-top:75px;
+}
+.path h2{
+	text-align: center;
+	margin-bottom:40px;
+}
+.path h3{
+	color:#fdf4da;
+	margin:10px 0;
+}
+.time1, .time2{
+	position:relative;
+	width:300px;
+	background-color:#4b4b50;
+	padding:5px;
+	margin:5px auto 0 auto;	
+	box-shadow: 10px 10px 10px -10px #370028;
+}
+.path-time-titre, .path-time-titre2{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#fdf4da;
+	margin:10px 0;
+}
+.path-time-titre2{
+	margin:0;
+}
+.path-time-sous-titre{
+	font-weight:bold;
+	margin:5px 0;
+}
+
+/*-----------------------------------
+=====================================
+			Réalisation
+=====================================
+-----------------------------------*/
+
+.realisation{
+	padding:75px 0 75px;
+}
+.img-real{
+	max-width:550px;
+	margin:0 auto;
+}
+.realisation p, .realisation br{
+	margin-bottom:10px;
+}
+.realisation h2{
+	margin-bottom: 40px;
+}
+.realisation h3{
+	margin-bottom:20px;
+}
+.realisation img{
+	border:1px solid #83e4e2;
+	filter:brightness(0.9);
+}
+.realisation img:hover{
+	filter:brightness(1);
+	-webkit-transform:scale(1.01);
+	transform:scale(1.01);
+	transition: transform .2s;
+}
+/*--------------------------------------------------------------------
+======================================================================
+							Footer
+======================================================================
+--------------------------------------------------------------------*/
+footer{
+	margin-top:75px;
+}
+.container-footer{
+	padding-top:20px;
+}
+.footer-floor1{
+	padding:40px 0 100px 0;
+}
+.space-around{
+	justify-content: space-around;
+}
+.block-link{
+	width: 200px;
+}
+.block-link img{
+	background-color:#f4661b;
+}
+.footer-floor1 img:hover{
+	-webkit-transform:scale(1.02);
+	transform:scale(1.02);
+	transition: transform .2s;
+}
+.footer-floor2{
+	padding:40px 0 40px 0;
+}
+footer h3{
+	margin-bottom:20px;
+}
+footer .link-footer{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+/*----------------------------------------------------------------------------------------------------------------------------
+==============================================================================================================================
+										Responsive
+==============================================================================================================================
+----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------
+=====================================
+		conventional
+=====================================
+-----------------------------------*/
+@media (min-width:768px){
+	*, body{
+		font-size:14px;
+	}
+	.top-titre{
+		display:block;
+	}
+	/*=================== nav ===================*/
+	h2.navBarTitle{
+		display:none;
+	}
+	.arrow-top{
+		width:50px;
+		height:50px;
+		bottom:35px;
+		right:35px;
+	}
+	.icone-menu-burger{
+		display:none;
+	}
+	.burger-links{
+		display:none;
+	}
+	.nav1{
+		display:block;
+	}
+	/*=============== Présentation ==============*/
+	.presentation{
+		margin-top:150px;
+	}
+	.presentation h2{
+	font-size: 2em;
+	}
+	.presentation div:nth-child(2){
+		padding-left:50px;
+	}
+	/*================== Skills =================*/
+	.skills {
+		margin-top:150px;
+		padding:0;
+	}
+	.div-bar{
+		padding-left:0;
+	}
+	/*================== path ===================*/
+	.path{
+		margin-top:150px;
+	}
+	.time1{
+		float:left;
+	}
+	.time2{
+		float:right;
+	}
+	/*================= réalisation ==================*/
+	.realisation{
+		margin-top: 150px;
+	}
+	/*================= footer ==================*/
+	footer{
+		margin-top:150px;
+	}
+}
+@media (min-width:818px){ /* cause taille des blocs à 400px*/
+	.time1, .time2{
+		width:400px;
+	}
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+==============================================================================================================================
+										Temp color
+==============================================================================================================================
+----------------------------------------------------------------------------------------------------------------------------*/
+
+.red{background-color: red;}
+.tan{background-color: tan;}
+.blue{background-color: blue;}
+.lblue{background-color: lightblue;}
+.pink{background-color: pink;}
